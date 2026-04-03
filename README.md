@@ -1,8 +1,6 @@
-# Project EGG Tools — by Eggman
+# Project EGG Tools
 
 A GUI toolkit for preserving [Project EGG](https://www.amusement-center.com) retro PC game downloads.
-
-**GitHub:** https://github.com/Eggmansworld
 
 ---
 
@@ -21,11 +19,14 @@ This toolkit automates the full preservation workflow: fetching the raw files, p
   ```
   pip install requests pytz
   ```
-- **QuickBMS** — required for the Extract tab only. Download from:
+- **QuickBMS** — required for the Extract tab only. Included, or download from:
   http://aluigi.altervista.org/papers.htm#quickbms
 - **project_egg_extract_bins_working.bms** — the QuickBMS script for the Project EGG `.bin` format. Included in this repository.
-- **7-Zip ZS** *(optional)* — required only if your ZIP archives use ZStandard compression (method 93). Standard deflate/store ZIPs do not need it. Download from: https://www.tc4shell.com/en/7zip/modern7z/
+- **7-Zip ZS** *(optional)* — required only if your ZIP archives use ZStandard compression (method 93). Standard deflate/store ZIPs do not need it. Download from https://github.com/mcmilk/7-Zip-zstd 
 - A **Project EGG account** — free registration at https://www.amusement-center.com — required for downloading. No paid membership is needed.
+---
+
+![Project EGG Collection](https://github.com/user-attachments/assets/4d4a73f8-5f5e-4016-8bcb-c2fd74befb09)
 
 ---
 
@@ -379,6 +380,19 @@ For reference, the known count of available downloads at various points in time:
 
 ---
 
+## Licensing
+
+Original source code, scripts, tooling, and hand-authored documentation and
+metadata in this repository are licensed under the MIT License.
+
+Archived game data, binaries, firmware, media assets, and other third-party
+materials are **not** covered by the MIT License and remain the property of
+their respective copyright holders.
+
+See the `LICENSE` and `NOTICE` files for full details and scope clarification.
+
+---
+
 ## Credits
 
 This GUI was built by **Eggman**, extending and wrapping the original [deviled-eggs](https://github.com/Icyelut/deviled-eggs) command-line tools with a full graphical interface, automated download handling, ZIP packaging, QuickBMS-based extraction with automatic mojibake correction, romanization CSV management, and DAT file generation.
@@ -394,3 +408,5 @@ Original deviled-eggs project credits:
 | **proffrink** | Scraping, research |
 | **Shadów** | Reverse engineering |
 | **Icyelut** | Original script, romanization |
+
+---
